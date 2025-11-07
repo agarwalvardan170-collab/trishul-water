@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trishul Mineral Water</title>
+<style>
+  body {
+    margin: 0; 
+    font-family: 'Georgia', serif;
+    background-color: #701b0b;
+    color: #d4af37;
+  }
+  header {
+    background-color: #7B2213;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #d4af37;
+  }
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #7B2213;
+    padding: 20px 40px 40px 40px;
+    border-radius: 35px 35px 60px 60px / 50px 50px 80px 80px;
+    border: 4px solid #d4af37;
+    box-sizing: border-box;
+  }
+  .label {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .label h1 {
+    font-size: 4em;
+    margin: 10px 0 6px 0;
+    font-weight: 900;
+    letter-spacing: 5px;
+  }
+  .label h2 {
+    font-size: 1.55em;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  .label .price {
+    font-size: 5em;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .border-frame {
+    border: 3px solid #d4af37;
+    border-radius: 35px 35px 60px 60px / 50px 50px 80px 80px;
+    padding: 30px;
+    display: inline-block;
+    position: relative;
+  }
+  .trishul-icon {
+    margin: 0 auto 20px auto;
+    width: 80px;
+    fill: #d4af37;
+  }
+  form {
+    margin-top: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form input, form select {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 12px 0;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background-color: #7B2213;
+    color: #d4af37;
+    font-family: 'Georgia', serif;
+  }
+  form input::placeholder, form select {
+    color: #d4af37cc;
+  }
+  form button {
+    background-color: #d4af37;
+    color: #701b0b;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  form button:hover {
+    background-color: #c19d2c;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 1em;
+    color: #d4af3755;
+  } 
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      margin: 15px;
+    }
+    header {
+      font-size: 2em;
+      padding: 20px 10px;
+    }
+    .label h1 {
+      font-size: 3em;
+    }
+    .label .price {
+      font-size: 3.5em;
+    }
+  }
+</style>
+</head>
+<body>
+<header>TRISHUL MINERAL WATER</header>
+
+<div class="container">
+  <div class="label border-frame">
+    <!-- Trishul icon SVG -->
+    <svg class="trishul-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
+      <path d="M32 2L29 20H19l13 15-7 12h5v9h6v-9h5l-7-12 13-15h-10l-3-18z"/>
+      <circle cx="32" cy="56" r="4"/>
+    </svg>
+    <h1>TRISHUL</h1>
+    <h2>MINERAL WATER</h2>
+    <div class="price">₹ 15</div>
+  </div>
+
+  <p style="text-align:center; font-size:1.2em; margin-bottom: 30px;">
+    Fresh, pure mineral water delivered to your doorstep.<br/>
+    Delivery Area: Sadar Bazar, Agra.
+  </p>
+
+  <form action="mailto:agarwalvardan170@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10,}" title="Enter valid phone number" required />
+    <input type="text" name="address" placeholder="Delivery Address" required />
+    <select name="bottle_type" required>
+      <option value="1 Litre">1 Litre (₹15)</option>
+      <option value="500 ml">500 ml (₹10)</option>
+    </select>
+    <input type="number" name="quantity" placeholder="Quantity (Minimum 6)" min="6" required />
+    <button type="submit">Send Order by Email</button>
+  </form>
+
+</div>
+
+<footer>© 2024 Trishul Mineral Water | Sadar Bazar, Agra | Contact: agarwalvardan170@gmail.com</footer>
+</body>
+</html>
